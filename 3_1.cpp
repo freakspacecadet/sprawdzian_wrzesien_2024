@@ -8,15 +8,16 @@ bool f(int x, int y) {
        }
        y = (y - (y%2))/2;
     }
+    return false;
 }
 
-int main()
+int main() {
     int x;
     int y;
 	for (int i = 0; i < 1000; i++) {
        cin >> x >> y;
        if (f(x, y) == true) {
-          cout << x << y << endl;
+          cout << x << " " << y << endl;
        }
     }
 	return 0;
